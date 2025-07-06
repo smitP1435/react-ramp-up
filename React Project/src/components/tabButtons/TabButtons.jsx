@@ -1,7 +1,13 @@
 import './TabButton.css'
 
-export default function TabButtons({children, onSelect}) {
+export default function TabButtons({children, onSelect, ...props}) {
+    
+    // const TagName = props.richText ? 'input' : 'textarea';
+
     return (
-        <button onClick={onSelect}>{children}</button>
+        <>
+            {/* <TagName /> */}
+            <button onClick={onSelect}>{children}</button>
+        </>
     )
 }

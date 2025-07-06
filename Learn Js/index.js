@@ -15,16 +15,17 @@
 
 
 
-const fs = require("fs");
+// const fs = require("fs");
 
-fs.readFile("salesData.json", function(err, data) {
-    data = JSON.parse(data);
+// fs.readFile("salesData.json", function(err, data) {
+//     data = JSON.parse(data);
 
-    const modifiedData = data.map((item) => {
-        item.totalSales = item.unitsSold * item.unitPrice
+//     const modifiedData = data.map((item) => {
+//         item.totalSales = item.unitsSold * item.unitPrice
 
-        return item;
-    })
+//         return item;
+//     })
 
-    console.log(modifiedData);
-})
+//     console.log(modifiedData);
+// })
+
